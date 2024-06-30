@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole's Personal Website</title>
+    <link id="mainStyleSheet" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- header for all pages -->
+<header>
+    <img id="logo" src="./logohdz.png" alt="Logo">
+    <h1>Nicole Hernandez</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="qualifications.html">Qualifications</a>
+    <a href="services.html">Services</a>
+    <a href="AI.html">AI</a>
+    <button onclick="toggleStyleSheet()" type="button">Day/Night Toggle</button>
+</nav>
+
+
+<section class="square-layout">
+    <div class="content-qual">
+        <h2>My Personal Skills...</h2>
+    </div>
+    <img src="./prog.png" alt="Programming" class="left-image">
+    <img src="./tech.png" alt="Technology" class="left-image">
+    <img src="./soft.png" alt="Soft Skills" class="left-image">
+</section>
+
+<!-- my skills and resume content -->
+<section id="section1-goals" class="flex-container">
+    <div class="content1">
+        <h2>Computer Science?</h2>
+        <p>
+            I've always had this natural curiosity about how things work, and computer science provides this incredible avenue for exploration. 
+            It's this perfect blend of logic, creativity, and problem-solving that really resonates with me. 
+            Living in this digital age, technology is like the pulse of our world, and being part of the driving force behind it seems like an exciting journey. 
+            Computer science, for me, is not just about writing lines of code; it's this dynamic realm where I can dive into everything from artificial intelligence to cybersecurity. 
+            What really gets me excited is the idea that I can create solutions that genuinely impact people's lives. It's a continuous learning journey, and that adaptability is something I find thrilling. 
+            Essentially, I see computer science as this versatile toolkit that equips me to tackle real-world challenges and contribute to the ever-evolving tech landscape.  
+        </p>
+    </div>
+</section>
+
+<!-- my skills and resume content -->
+<section id="section1-resume" class="flex-container">
+    <h2>Resume</h2>
+    <div class="pdf-container">
+        <img src="./myresume.png" alt="Resume Image" class="pdf-viewer">
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section id="section1-link">
+    <div class="pdf-link">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRXJSqTeAzQtMbszEqXSehZe8NS4xRP4K_-AoW4vACz69buAizXleC_ryhCoX9Waog_bkiPoFzTeKrb/pub" class="download-button" target="_blank">Link to Resume</a>
+    </div>
+</section>
+
+
+<script src="functions.js"></script>
+</body>
+</html>
