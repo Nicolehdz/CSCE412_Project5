@@ -3,20 +3,25 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "No dependencies to install."  
+      - echo "Installing dependencies..."
+      - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      - unzip awscliv2.zip
+      - sudo ./aws/install
+      - aws --version
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - echo "Nothing to do in the pre_build phase..."
   build:
     commands:
-      - echo Build started on `date`
-      - echo Building the project...
-      # Add your build commands here if needed
+      - echo "Build started on `date`"
+      - echo "Building the project..."
+      - mkdir -p build
+      - cp -r * build/
   post_build:
     commands:
-      - echo Build completed on `date`
-      - echo Uploading build artifacts to S3...
-      - aws s3 cp ./project-1-Nicolehdz/ s3://csce412nhernandez-bucket/project-1-Nicolehdz/ --recursive
+      - echo "Build completed on `date`"
+      - echo "Uploading build artifacts to S3..."
+      - aws s3 cp build/ s3://csce412nhernandez-bucket/project-1-Nicolehdz/ --recursive
 artifacts:
   files:
     - '**/*'
