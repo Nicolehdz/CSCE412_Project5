@@ -2,9 +2,8 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: latest
-      # You can specify runtime versions here if needed, e.g., nodejs: 14
+    commands:
+      - echo "No dependencies to install."  
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
