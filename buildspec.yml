@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
+      nodejs: latest
       # You can specify runtime versions here if needed, e.g., nodejs: 14
   pre_build:
     commands:
