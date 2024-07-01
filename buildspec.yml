@@ -12,7 +12,10 @@ phases:
       - echo "Build started on `date`"
       - echo "Building the project..."
       - mkdir -p build
-      - cp -r * build/
+      - echo "Listing current directory contents"
+      - ls -al
+      - echo "Copying files to build directory"
+      - cp -r ./project-1-Nicolehdz/* build/
   post_build:
     commands:
       - echo "Build completed on `date`"
