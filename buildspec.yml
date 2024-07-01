@@ -3,23 +3,20 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.x  # Adjust this if you are using a different runtime
-    commands:
-      - echo "Skipping dependency installation."
+      # You can specify runtime versions here if needed, e.g., nodejs: 14
   pre_build:
     commands:
-      - echo "Preparing for build..."
+      - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo "Building the project..."
-      - echo "Insert your build commands here."
+      - echo Build started on `date`
+      - echo Building the project...
+      # Add your build commands here if needed
   post_build:
     commands:
-      - echo "Build process completed."
-      - echo "Uploading build artifacts..."
-      - aws s3 cp ./build/ s3://csce412nhernandez-bucket/build/ --recursive  # Update with the correct path and bucket
-
+      - echo Build completed on `date`
+      - echo Uploading build artifacts to S3...
+      - aws s3 cp ./project-1-Nicolehdz/ s3://csce412nhernandez-bucket/project-1-Nicolehdz/ --recursive
 artifacts:
   files:
     - '**/*'
-  discard-paths: yes
