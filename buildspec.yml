@@ -2,37 +2,6 @@ version: 0.2
 
 phases:
   install:
-<<<<<<< HEAD
-    runtime-versions:
-      python: 3.x  # Use appropriate runtime if needed
-    commands:
-      - echo Installing dependencies...
-      - pip install -r requirements.txt  # Adjust if using a different package manager or language
-  pre_build:
-    commands:
-      - echo Preparing for build...
-      - echo No pre-build commands required.
-  build:
-    commands:
-      - echo Building the project...
-      - echo Example build command here
-      - echo Build completed!
-  post_build:
-    commands:
-      - echo Build process completed.
-      - echo Uploading build artifacts...
-      - aws s3 cp ./build/ s3://csce412nhernandez-bucket/build/ --recursive  # Update with the correct path and bucket
-
-artifacts:
-  files:
-    - '**/*'
-  discard-paths: yes
-
-cache:
-  paths:
-    - '/root/.m2/**/*'  # Adjust paths as needed for caching dependencies
-    - 'node_modules/**/*'
-=======
     commands:
       - echo "No dependencies to install." 
   pre_build:
@@ -55,4 +24,3 @@ cache:
 artifacts:
   files:
     - '**/*'
->>>>>>> 3d5498e8b4bbc3958666c828ba0d7ffadf9e4ba3
