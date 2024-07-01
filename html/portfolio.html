@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole's Personal Website</title>
+    <link id="mainStyleSheet" rel="stylesheet" href="style.css" />
+</head>
+<body class="body-port">
+
+<!-- header format for all pages -->
+<header class="header-2">
+    <img id="logo" src="./logohdz.png" alt="Logo">
+    <h1>Nicole Hernandez</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="qualifications.html">Qualifications</a>
+    <a href="services.html">Services</a>
+    <a href="AI.html">AI</a>
+    <button onclick="toggleStyleSheet()" type="button">Day/Night Toggle</button>
+</nav>
+
+<!-- my project content with description -->
+<section id="section1-goals" class="flex-container">
+    <div class="content5">
+        <p> 
+            These are some of my most relevant projects I have completed or am in the process:
+        </p>
+        <h2>CYPSA</h2>
+        <p> 
+            Project is centered on optimizing threat detection and monitoring through intuitive graphical representations of network activities. 
+            This initiative seeks to streamline risk assessment and compliance efforts by presenting vulnerabilities and potential threats in a more accessible manner. 
+            Leveraging the RESLab Testbed and CyPRES EMS, the project aims to integrate FMECA and a Risk Matrix, enhancing its capability to spot flaws in machinery and systems and prioritize cybersecurity risks. 
+            The ongoing work aims to create a holistic solution that combines data acquisition, cyber attack simulation, data fusion algorithms, and a user-friendly CyPSA interface for improved cybersecurity measures.
+        </p>
+        <a href="https://ieeexplore.ieee.org/document/9065990" class="button">Click Here</a>
+    </div>
+    <div class="image-and-button-container">
+        <img src="./cypsa.png" alt="CYPSA Image" class="section1-image">
+    </div>
+</section>
+
+
+
+<section id="section1-proj">
+    <img src="./ticpic.png" alt="Image Description" class="section2-image">
+    <div class="content3">
+        <h2>Tic-Tac-Toe CLI Expert</h2>
+        <p> 
+
+            Tackled a coding challenge, crafting an engaging command line interface (CLI) game in under 24 hours. 
+            The project aimed to provide users, regardless of their backgrounds, with an interactive experience. Specifically, 
+            I designed a two-player Tic-Tac-Toe game, incorporating NPM packages to enhance accessibility and enjoyment.
+            In the same timeframe, I built a CLI-based coding project and presented it to Capital One Software Engineers and Managers. 
+            This experience not only showcased my proficiency in Node.js but also allowed me to gather insights from industry professionals. 
+            Additionally, I independently developed a program as part of a Capital One program, highlighting my commitment to continuous learning and hands-on application of my coding skills.
+        </p>
+        <a href="https://github.com/Nicolehdz/Tic-Tac-Toe-CLI-Master" class="button">Click Here</a>
+    </div>
+</section>
+
+<section id="section1-goals" class="flex-container">
+    <div class="content5">
+        <h2>8alance</h2>
+        <p> 
+            I collaborated with a group of three individuals, including myself, to develop a unique app aimed at promoting self-care and raising social awareness. 
+            Our creation, "8alance," is a mental health app designed to offer users valuable resources. 
+            Notably, the app incorporates an engaging 8-ball game that not only entertains but also delivers personalized self-care activities.
+            In particular, my responsibility within the team was to craft the 8-ball shaker simulation, a crucial component that enhances user interaction with the app. 
+            Through this feature, users can thoroughly engage with the app, ensuring a dynamic and immersive experience. The 8alance app represents our collective effort to contribute 
+            positively to mental well-being by combining entertainment with self-care resources.
+        </p>
+    </div>
+    <div class="image-and-button-container">
+        <img src="./8alan.png" alt="Image Description" class="section1-image">
+        <a href="https://github.com/dydzuhnolivia/8alance-Project" class="button">Click Here</a>
+    </div>
+</section>
+
+<script src="functions.js"></script>
+</body>
+</html>

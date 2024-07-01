@@ -2,6 +2,7 @@ version: 0.2
 
 phases:
   install:
+<<<<<<< HEAD
     runtime-versions:
       python: 3.x  # Use appropriate runtime if needed
     commands:
@@ -31,3 +32,27 @@ cache:
   paths:
     - '/root/.m2/**/*'  # Adjust paths as needed for caching dependencies
     - 'node_modules/**/*'
+=======
+    commands:
+      - echo "No dependencies to install." 
+  pre_build:
+    commands:
+      - echo "Nothing to do in the pre_build phase..."
+  build:
+    commands:
+      - echo "Build started on `date`"
+      - echo "Building the project..."
+      - mkdir -p build
+      - echo "Listing current directory contents"
+      - ls -al
+      - echo "Copying files to build directory"
+      - cp -r ./project-1-Nicolehdz/* build/
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
+      - echo "Uploading build artifacts to S3..."
+      - aws s3 cp build/ s3://csce412nhernandez-bucket/project-1-Nicolehdz/ --recursive
+artifacts:
+  files:
+    - '**/*'
+>>>>>>> 3d5498e8b4bbc3958666c828ba0d7ffadf9e4ba3
